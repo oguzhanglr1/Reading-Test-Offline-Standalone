@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="welcome" class="app-page">
+    <header class="app-topbar">
+        <div class="brand-block" data-link="welcome.html">
+            <p class="brand-kicker">Reading Test</p>
+            <h1>Kontrol paneli</h1>
+        </div>
+
+        <nav class="app-nav">
+            <button class="header-button nav-button" data-link="welcome.html">Test</button>
+            <button class="header-button nav-button" data-link="skorlar.html">Skorlar</button>
+            <button class="header-button nav-button" data-link="yorumlar.html">Yorumlar</button>
+        </nav>
+
+        <div class="profile-container top-profile-panel app-user-panel">
+            <span id="userName" class="user-name"></span>
+            <a href="profil.html" class="profile-button">Profil</a>
+            <a href="#" id="logoutButton" class="logout-button">Cikis Yap</a>
+        </div>
+    </header>
+
+    <main class="app-layout dashboard-layout">
+        <section class="control-panel app-panel">
+            <div class="panel-header">
+                <p class="section-kicker">Hazirlik</p>
+                <h3>Test ayarlari</h3>
+            </div>
+
+            <div class="controls-grid">
+                <label class="input-group" for="wordCountSelect">
+                    <span>Kelime sayisi</span>
+                    <select id="wordCountSelect">
+                        <option value="30">30</option>
+                        <option value="60">60</option>
+                        <option value="90">90</option>
+                    </select>
+                </label>
+
+                <label class="input-group" for="timeSelect">
+                    <span>Sure</span>
+                    <select id="timeSelect">
+                        <option value="0.5">0.5 dakika</option>
+                        <option value="1">1 dakika</option>
+                        <option value="2">2 dakika</option>
+                    </select>
+                </label>
+            </div>
+
+            <button id="startButton" class="start-button primary-action">Paragraf Gonder</button>
+            <div id="timerDisplay" class="timer-badge"></div>
+        </section>
+
+        <section class="reading-panel app-panel panel-wide">
+            <div class="panel-header">
+                <p class="section-kicker">Metin alani</p>
+                <h3>Paragraf</h3>
+            </div>
+            <div id="paragrafText" class="reading-text-card"></div>
+        </section>
+
+        <section class="answer-panel app-panel panel-wide">
+            <div class="panel-header">
+                <p class="section-kicker">Hatirladiklarin</p>
+                <h3>Yeniden yaz</h3>
+            </div>
+
+            <div class="comment-section writing-panel">
+                <textarea id="userComment" class="comment-input" placeholder="Yazdiginizi buraya girin..." readonly></textarea>
+                <button id="commentButton" class="comment-button primary-action" disabled>Sonucu Gonder</button>
+            </div>
+
+            <div id="resultSection" class="result-section app-result-card">
+                <p id="resultMessage"></p>
+            </div>
+        </section>
+    </main>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

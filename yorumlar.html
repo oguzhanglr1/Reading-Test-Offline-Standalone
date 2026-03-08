@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yorumlar</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="yorumlar" class="app-page">
+    <header class="app-topbar">
+        <div class="brand-block" data-link="welcome.html">
+            <p class="brand-kicker">Reading Test</p>
+            <h1>Yorumlar</h1>
+        </div>
+
+        <nav class="app-nav">
+            <button class="header-button nav-button" data-link="welcome.html">Test</button>
+            <button class="header-button nav-button" data-link="skorlar.html">Skorlar</button>
+        </nav>
+
+        <div class="profile-container top-profile-panel app-user-panel">
+            <span id="commentsUserName" class="user-name"></span>
+            <a href="profil.html" class="profile-button">Profil</a>
+            <a href="#" id="commentsLogoutButton" class="logout-button">Cikis Yap</a>
+        </div>
+    </header>
+
+    <main class="app-layout single-column-layout">
+        <section class="comment-form app-panel comment-entry-panel">
+            <div class="panel-header">
+                <p class="section-kicker">Paylasim alani</p>
+                <h3>Yorum Ekle</h3>
+            </div>
+            <form id="commentForm" class="stacked-form">
+                <textarea name="yorum" class="comment-input" rows="4" placeholder="Yorumunuzu buraya yazin..."></textarea>
+                <button type="submit" class="submit-button primary-action">Yorum Gonder</button>
+            </form>
+        </section>
+
+        <section class="table-container app-panel themed-card">
+            <div class="panel-header">
+                <p class="section-kicker">Topluluk</p>
+                <h3>Tum Yorumlar</h3>
+            </div>
+            <table class="themed-table">
+                <thead>
+                    <tr>
+                        <th>Kullanici Adi</th>
+                        <th>Yorum</th>
+                    </tr>
+                </thead>
+                <tbody id="allCommentsBody"></tbody>
+            </table>
+        </section>
+
+        <section class="table-container app-panel themed-card">
+            <div class="panel-header">
+                <p class="section-kicker">Sana ait</p>
+                <h3 id="myCommentsTitle"></h3>
+            </div>
+            <table class="themed-table">
+                <thead>
+                    <tr>
+                        <th>Yorum</th>
+                        <th>Sil</th>
+                    </tr>
+                </thead>
+                <tbody id="myCommentsBody"></tbody>
+            </table>
+        </section>
+    </main>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

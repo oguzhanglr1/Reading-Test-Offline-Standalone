@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayit Ol</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="register" class="auth-page">
+    <main class="auth-shell auth-shell-register">
+        <section class="auth-hero">
+            <p class="auth-kicker">Yeni hesap</p>
+            <h1>Her denemede daha net, daha hizli.</h1>
+            <p class="auth-copy">
+                Kendine bir profil olustur, farkli kelime seviyelerinde testleri baslat ve gelisimini
+                yorumlar ile skor tablolarinda biriktir.
+            </p>
+            <div class="auth-highlights">
+                <span>Kisisel skor takibi</span>
+                <span>Yorum paylasimi</span>
+                <span>Hizli ve sade kullanim</span>
+            </div>
+        </section>
+
+        <section class="auth-card auth-card-wide">
+            <div class="auth-badge">Kayit Ol</div>
+            <h2>Profilini olustur</h2>
+            <p class="auth-subtitle">Birkaç bilgi gir ve uygulamayi hemen kullanmaya basla.</p>
+            <p id="registerError" class="error-message hidden"></p>
+
+            <form id="registerForm" class="auth-form auth-form-grid">
+                <label class="input-group" for="registerUsername">
+                    <span>Kullanici adi</span>
+                    <input id="registerUsername" type="text" name="kullanici_adi" placeholder="okur_adi" required>
+                </label>
+
+                <label class="input-group" for="registerName">
+                    <span>Ad</span>
+                    <input id="registerName" type="text" name="isim" placeholder="Adiniz" required>
+                </label>
+
+                <label class="input-group" for="registerSurname">
+                    <span>Soyad</span>
+                    <input id="registerSurname" type="text" name="soyisim" placeholder="Soyadiniz" required>
+                </label>
+
+                <label class="input-group input-group-wide" for="registerEmail">
+                    <span>E-posta</span>
+                    <input id="registerEmail" type="email" name="email" placeholder="ornek@mail.com" required>
+                </label>
+
+                <label class="input-group input-group-wide" for="registerPassword">
+                    <span>Sifre</span>
+                    <input id="registerPassword" type="password" name="sifre" placeholder="Guclu bir sifre secin" required>
+                </label>
+
+                <button type="submit" class="primary-action input-group-wide">Kayit Ol</button>
+            </form>
+
+            <div class="auth-footer-actions">
+                <button type="button" class="ghost-button" data-link="index.html">Ana Sayfaya Don</button>
+                <a href="login.html" class="auth-inline-link">Zaten hesabin var mi? Giris yap</a>
+            </div>
+        </section>
+    </main>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

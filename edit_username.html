@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kullanıcı Adını Düzenle</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="edit-username" class="auth-page soft-background">
+    <main class="auth-shell auth-shell-compact">
+        <section class="auth-card">
+            <div class="auth-badge">Duzenle</div>
+            <h2>Kullanici Adi</h2>
+            <p class="auth-subtitle">Yeni kullanici adini gir ve profiline kaydet.</p>
+            <p id="usernameError" class="error-message hidden"></p>
+            <form id="usernameForm" class="auth-form">
+                <label class="input-group" for="new_username">
+                    <span>Yeni kullanici adi</span>
+                    <input type="text" id="new_username" name="new_username" required>
+                </label>
+                <input type="submit" class="primary-action" value="Kaydet">
+            </form>
+            <div class="auth-footer-actions">
+                <button type="button" class="ghost-button" data-link="profil.html">Profile Don</button>
+            </div>
+        </section>
+    </main>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
